@@ -34,6 +34,7 @@ struct ScenarioDetailView: View {
                     .lineLimit(2)
                     .font(.title2).multilineTextAlignment(.center)
                     .padding()
+                        
                 // MARK: - Answer
                         Menu {
                             ForEach(dropDownList, id: \.self){ client in
@@ -72,9 +73,3 @@ struct ScenarioDetailView: View {
         .edgesIgnoringSafeArea(.all)
     }
 }
-
-//struct ScenarioDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ScenarioDetailView(scenario: <#Scenario#>)
-//    }
-//}
