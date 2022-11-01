@@ -11,6 +11,13 @@
 		F64F052C2910F87300DF3DAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F052B2910F87300DF3DAA /* ContentView.swift */; };
 		F64F052E2910F87500DF3DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64F052D2910F87500DF3DAA /* Assets.xcassets */; };
 		F64F05312910F87500DF3DAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64F05302910F87500DF3DAA /* Preview Assets.xcassets */; };
+		F6BE9F0A2910F9620035CD20 /* ScenarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE9F092910F9620035CD20 /* ScenarioView.swift */; };
+		F6BE9F0C2910F98F0035CD20 /* ScenarioVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE9F0B2910F98F0035CD20 /* ScenarioVM.swift */; };
+		F6BE9F102910F9E00035CD20 /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE9F0F2910F9E00035CD20 /* Scenario.swift */; };
+		F6BE9F162910FE770035CD20 /* ColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE9F152910FE770035CD20 /* ColorConstant.swift */; };
+		F6BE9F182910FF9D0035CD20 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE9F172910FF9D0035CD20 /* HeaderView.swift */; };
+		F6BE9F1B291104BC0035CD20 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE9F1A291104BC0035CD20 /* WelcomeView.swift */; };
+		F6BE9F1D2911157F0035CD20 /* ScenarioDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE9F1C2911157F0035CD20 /* ScenarioDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		F64F052B2910F87300DF3DAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F64F052D2910F87500DF3DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F64F05302910F87500DF3DAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F64F05372910F8A400DF3DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6BE9F092910F9620035CD20 /* ScenarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioView.swift; sourceTree = "<group>"; };
+		F6BE9F0B2910F98F0035CD20 /* ScenarioVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioVM.swift; sourceTree = "<group>"; };
+		F6BE9F0F2910F9E00035CD20 /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
+		F6BE9F152910FE770035CD20 /* ColorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstant.swift; sourceTree = "<group>"; };
+		F6BE9F172910FF9D0035CD20 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F6BE9F1A291104BC0035CD20 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F6BE9F1C2911157F0035CD20 /* ScenarioDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +66,11 @@
 		F64F05282910F87300DF3DAA /* ExpertApp */ = {
 			isa = PBXGroup;
 			children = (
-				F64F05292910F87300DF3DAA /* ExpertAppApp.swift */,
-				F64F052B2910F87300DF3DAA /* ContentView.swift */,
+				F6BE9F142910FE560035CD20 /* Shared */,
+				F6BE9F0E2910F9CE0035CD20 /* Models */,
+				F6BE9F072910F92E0035CD20 /* Views&ViewControllers */,
+				F6BE9F062910F9100035CD20 /* App */,
+				F64F05372910F8A400DF3DAA /* Info.plist */,
 				F64F052D2910F87500DF3DAA /* Assets.xcassets */,
 				F64F052F2910F87500DF3DAA /* Preview Content */,
 			);
@@ -65,6 +83,59 @@
 				F64F05302910F87500DF3DAA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6BE9F062910F9100035CD20 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F64F052B2910F87300DF3DAA /* ContentView.swift */,
+				F64F05292910F87300DF3DAA /* ExpertAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F6BE9F072910F92E0035CD20 /* Views&ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6BE9F192911048F0035CD20 /* WelcomeScreen */,
+				F6BE9F082910F9490035CD20 /* Scenarios */,
+			);
+			path = "Views&ViewControllers";
+			sourceTree = "<group>";
+		};
+		F6BE9F082910F9490035CD20 /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				F6BE9F092910F9620035CD20 /* ScenarioView.swift */,
+				F6BE9F0B2910F98F0035CD20 /* ScenarioVM.swift */,
+				F6BE9F1C2911157F0035CD20 /* ScenarioDetailView.swift */,
+			);
+			path = Scenarios;
+			sourceTree = "<group>";
+		};
+		F6BE9F0E2910F9CE0035CD20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6BE9F0F2910F9E00035CD20 /* Scenario.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6BE9F142910FE560035CD20 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F6BE9F152910FE770035CD20 /* ColorConstant.swift */,
+				F6BE9F172910FF9D0035CD20 /* HeaderView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F6BE9F192911048F0035CD20 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F6BE9F1A291104BC0035CD20 /* WelcomeView.swift */,
+			);
+			path = WelcomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +210,13 @@
 			files = (
 				F64F052C2910F87300DF3DAA /* ContentView.swift in Sources */,
 				F64F052A2910F87300DF3DAA /* ExpertAppApp.swift in Sources */,
+				F6BE9F0C2910F98F0035CD20 /* ScenarioVM.swift in Sources */,
+				F6BE9F1D2911157F0035CD20 /* ScenarioDetailView.swift in Sources */,
+				F6BE9F1B291104BC0035CD20 /* WelcomeView.swift in Sources */,
+				F6BE9F102910F9E00035CD20 /* Scenario.swift in Sources */,
+				F6BE9F0A2910F9620035CD20 /* ScenarioView.swift in Sources */,
+				F6BE9F162910FE770035CD20 /* ColorConstant.swift in Sources */,
+				F6BE9F182910FF9D0035CD20 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +348,7 @@
 				DEVELOPMENT_TEAM = TR485YC8FN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpertApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +378,7 @@
 				DEVELOPMENT_TEAM = TR485YC8FN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpertApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
